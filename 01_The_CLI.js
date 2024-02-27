@@ -252,6 +252,115 @@
 
 
 
+        //----- (05) - (Bash histroty)
+
+
+// :/$   tail ~/.bash_history
+
+// :/$   pwd
+
+// :/$   ls -a
+
+// :/$   ls -a
+
+// :/$   clear
+
+
+// ---------------------------------------------
+
+// :/$   ls -a
+
+// :/$   !!
+
+// :/$   clear
+
+
+// ----------------------------------------------
+
+
+// :/$   ls
+
+// :/$   Ctrt+L   ==>  it also does clear.     // ctrl+N ==> No idea
+
+
+
+// ==> Copy and paste on the command line
+
+
+// ==> Ctrl+Shift+C and   Ctrl+Shift+V. <== 
+
+
+
+            //----- (06) - (CLI Shortcuts)
+
+
+// - Ctrl +  A - takes you to the beginning of the line
+
+// - Ctrl +  E - takes you to end of the line
+
+// - Ctrl +  K - "yank" everything after the cursosr
+
+// - Ctrl +  U - "yank" everything before the cursosr
+
+// - Ctrl +  Y - "paste" (paste in quotes because it doesn't actually go inti your system clipboard ) everything you yanked 
+
+// - Ctrl +  L - clear the screen 
+
+// - Ctrl +  R - reverse search through history
+
+
+
+
+            //-----(07) - (Signals)
+
+
+// - Ctrl + C - SIGINT
+
+/* ==> So go type yes into your terminal, You'll find yourself with an infinite wall of 
+ ever-spamming y s in front of you. To stop it, hit Ctrl + C and it'll stop immediately. */
+
+
+// :/$   tail -f .bash_history
+
+
+
+// :/$   yes
+
+// - Ctrl + C 
+
+// - Ctrl + D
+
+
+
+// - Ctrl + D = SIGINT
+
+
+// ----------------------------------------------
+
+// :/$   ps aux
+
+// :/$   ps aux | grep yes
+
+// :/$   clear 
+
+// ----------------------------------------------
+
+
+// :/$   yes > /dev/null &
+
+// :/$   pas aux | grep yes
+
+// :/$   kill -9 1465
+
+// :/$   kill -l
+
+// :/$   kill -SIGKILL 1467
+
+// :/$   clear
+
+// ----------------------------
+
+// :/$   kill -l
 
 
 
