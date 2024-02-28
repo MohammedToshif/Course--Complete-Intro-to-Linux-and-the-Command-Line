@@ -53,3 +53,34 @@
 // :~$  vi textfile.txt
 
 // :~$  clear
+
+
+
+            //-----(03) - (VIM: Basic Command)
+
+
+// :~$  vi textfile.txt
+
+// - Output:
+// - Press ENTER to continue
+
+// - this is brian
+
+// - we're typing in cim now 
+
+// - this is so much fun 
+
+// - write some more stuff
+
+
+
+
+// : w.That's how you save
+
+// : q! Quit
+
+// z:q may not work
+
+// wq! This saves and quits
+
+// q! This just quits without saving
