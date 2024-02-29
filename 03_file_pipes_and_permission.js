@@ -125,7 +125,7 @@
 // clear
 
 
-// ------------------------------------
+// -------------------------------------------------------------
 
 
 // :~$  rm my-new-file.txt      // => remove one file
@@ -433,3 +433,115 @@
 // :~/folder3$  touch file//.txt
 
 // :~/folder3$  ls
+
+
+
+            //----- (04) - (Output Streams)
+
+
+// :~/folder3$  cd ..
+
+// :~$  mkdir streams        // => create a directory
+
+// :~$  cd streams 
+
+// :~/streams$  ls
+
+// :~/streams$  echo 'this is my text'
+
+// :~/streams$  echo 'this is my text' 1> new-file.txt
+
+// :~/streams$  ls
+
+// :~/streams$  cat new-file.txt
+
+// :~/streams$  cat new-file.txt 1> another-file.txt
+
+// :~/streams$  ls
+
+// :~/streams$  cat another-file.txt
+
+// :~/streams$  cat new-file.txt 1>> another-file.txt    // => appending to existing file
+
+// :~/streams$  cat another-file.txt
+
+// :~/streams$  cat new-file.txt 1> another-file.txt
+ 
+// :~/streams$  cat another-file.txt
+
+// :~/streams$  ls -lsah 1> ls.txt
+
+// :~/streams$  cat ls.txt
+
+// :~/streams$  ls 1> ls.txt
+
+// :~/streams$  ls
+
+// :~/streams$  cat ls.txt
+
+// :~/streams$  cat non-existant-file.txt
+
+// :~/streams$  cat non-existant-file.txt 1> cat .txt
+
+// :~/streams$  ls
+
+// :~/streams$  cat cat.txt
+
+// :~/streams$  cat non existant-file.txt 2> error.txt
+
+// :~/streams$  ls
+
+// :~/streams$  cat error.txt
+
+// :~/streams$  clear            
+
+
+
+// -------------------------------------------------------------------
+
+// :~/streams$  ls -lsah 1> ls.txt 2> ls-error.txt
+
+// :~/streams$  ls -lsah > ls.txt
+
+// :~/streams$  ls -lsah >> ls.txt
+
+// :~/streams$  ls -lsah 2> /dev/null
+
+// :~/streams$  ls -lsah 2> /dev/null
+
+// :~/streams$  cat some-file.txt 1> /dev/null
+
+// :~/streams$  cat some-file.txt 2> /dev/null
+
+
+
+            //----- (05) - (Input Streams)
+
+
+// :~$  grep "ls-error.txt" < ls.txt
+
+/**  Output:
+     * - 0 -rw-r--r-- 1 dell 197121  0 Feb 27 19:47 ls-error.txt
+     * - 0 -rw-r--r-- 1 dell 197121  0 Feb 27 19:47 ls-error.txt    */
+
+// the contents of the file to standard input(stdin)
+
+
+// ---------------------------------------------------------------
+
+//  Using stdin and stdout
+
+// :~$  grep "ls-error.txt" < ls.txt 1> grep.txt 2> /dev/null   
+
+// :~$  cat grep.txt
+
+/** - Output:
+* - 0 -rw-r--r-- 1 dell 197121  0 Feb 27 19:47 ls-error.txt
+* - 0 -rw-r--r-- 1 dell 197121  0 Feb 27 19:47 ls-error.txt */
+
+
+// :~$  grep "ls-error.txt" < ls.txt
+
+/** - Output:
+* - 0 -rw-r--r-- 1 dell 197121  0 Feb 27 19:47 ls-error.txt
+* - 0 -rw-r--r-- 1 dell 197121   0 Feb 27 19:47 ls-error.txt    */
