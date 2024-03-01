@@ -545,3 +545,225 @@
 /** - Output:
 * - 0 -rw-r--r-- 1 dell 197121  0 Feb 27 19:47 ls-error.txt
 * - 0 -rw-r--r-- 1 dell 197121   0 Feb 27 19:47 ls-error.txt    */
+
+
+
+               //----- (06) - (Pipes)
+
+
+// :~$  cat ls.txt | grep "ls-error.txt"   //Concatinate One Prg. to Another
+
+// :~$  echo hello >> ls.txt
+
+// :~$  cat ls.txt
+// -->  hello
+
+
+// :~$  ps aux                // => display information about all running processes on the system
+
+// :~$  ps aux | grep "ps aux "
+
+// :~$  yes > /dev/null &     // => [1] 1188
+
+// :~$  ps aux | grep "yes"
+
+// :~$  kill -9 1126
+
+
+
+//------------------------------------------------------------------
+
+
+// =>  working on folder3/
+
+// :~/$  rm -i *.txt              // => remove all file with .txt But Permission "y" or "n"
+
+// :~/$  yes n | rm - *.txt       
+
+// :~/$  yes y | rm - *.txt       // => all txt file imidietaly Deleted
+ 
+// :~/$  ls
+
+// :~/$  echo lollerskates > file.txt
+
+// :~/$  cat file.txt 
+
+// :~/$  cat file.txt >>echo
+
+// :~/$  ls 
+
+// :~/$  cat file.txt | echo
+
+// :~/$  cat file.txt | cat 
+
+// :~/$  cat file.txt | echo hy
+// hi
+ 
+// :~/$  yes > /dev/null &    // => [1] 1257
+
+// :~/$  ps aux | grep yes 
+
+
+
+               //----- (07) - (Principle of least Power)
+
+
+// :~$  ls
+
+// :~$  whoami
+
+// :~$  whoami toshif
+
+// :~$  whoami                // => s     
+
+// :~$  cat /etc/passwd
+
+// :~$  clear 
+
+
+// -----------------------------------------------
+
+
+// :~$  whoami                // => s 
+
+// :~$  cd /
+
+// :~/$  mkdir hi             // => creat hi direc.
+
+// :~/$  ls -lsah
+
+// :~/$  cd /Home
+
+// :~/home$  ls -lsah
+
+// :~/home$  rm -rf / 
+
+// :~/home$  rm -rf akram             // => delete all files and dir in
+
+
+
+               //----- (08) - (Superuser)
+
+
+// :~/home$  cd /
+
+// :~/$  ls
+ 
+// :~/$  sudo mkdir hi
+ 
+// :~/$  ls
+
+// :~/$  ls -lsah
+
+// :~/$  sudo whoami          // => root
+
+// :~/$  whoami               // => dell
+
+// :~/$  sudo su              // => Enter the root directory
+
+// :/#  whoami                // => root
+
+// :/#  exit                  // => exit from super user to normal user
+
+// :~/$  sudo echo hi         // => hi
+
+// :~/$  sudo useradd brian           // => brand new User
+
+// :~/$  sudo passwd brian            // => password
+/* - Enter new UNIX password:
+ * - Retype ne UNIX password: 
+ *
+ * - passwd: password updated successfully
+ */
+
+// ~/:$  su  brian                    // => Enter the Passwd
+// =>  password: 
+
+// ~/:$  pwd
+
+/* / */
+
+// ~/:$  whoami     
+// =>  brian
+
+// ~/:$  ls
+
+// ~/:$  cat /etc/issue
+// =>  Ubuntu 18.04.4 LTS \n \l
+
+// ~/:$  clear
+
+
+
+// -------------------------------------------------------------
+
+
+// :~$  history | tail -5
+/* - 267  cd /home/brian
+   - 266  pwd
+   - 265  whoami
+   - 264  history | tail -5
+   - 263  clear  */
+    
+
+// => Shortcut Key for Exit: CTRL + D
+
+
+// :~$  exit                  // => Exit  from Brians account and return to root account
+
+// :~$  sudo usermod -aG sudo brian
+
+// :~$  su brian
+// =>  password:
+
+// $  whoami                // => Checking Username
+// => brian
+
+// $  sudo whoami           // => Checking Sudo Username
+// =>  root
+
+// $  exit
+
+
+
+//----- (09) - (Group Permission)
+
+
+// :~$  su brian
+
+// :~$  whoami 
+    // => brian 
+
+// :~$  ls
+
+// :~$  pwd
+    // =>  / 
+
+// :~$  cd /home/james
+    // => bash: cd: /home/
+    // => james: No such file or directory 
+
+// :~$  ls
+
+// :~$  ls -lsah 
+
+// :~$  vi another-file.txt
+
+// :~$  whoami 
+    // => brian
+
+// :~$  ls -lsah /bin
+
+// :~$  pwd    
+ 
+// :~$  ls -lsah
+
+// :~$  touch brian.txt
+
+// :~$  sudo touch brian.txt
+
+// :~$  ls -lsah
+
+// :~$  exit 
+
+
