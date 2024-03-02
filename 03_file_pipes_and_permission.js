@@ -726,7 +726,7 @@
 
 
 
-//----- (09) - (Group Permission)
+            //----- (09) - (Group Permission)
 
 
 // :~$  su brian
@@ -767,3 +767,123 @@
 // :~$  exit 
 
 
+// :/$  whoami
+
+// :/$  cd /
+
+// :/$  ls
+
+// :/$  mkdir hello
+// => mkdir: cannot directory 'hello': Permission denied
+
+// :/$  sudo mkdri hello
+
+// :/$  ls
+
+// :/$  ls -lsah
+
+// :/$  cd hello
+
+// :/hello$  touch hello.txt  
+
+// :/hello$  sudo chown akram: akram /hello
+
+// :/hello$  ls -lsah
+
+// :/hello$  whoami
+
+// :/hello$  touch hello.txt
+
+// :/hello$  su brisn
+// => Password:
+
+// $  ls
+
+// $  touch brian.txt              // => Permission Denied
+
+// $  exit
+
+// $  clear
+
+
+// ---------------------------------------------
+
+// :/hello$  ls -lsah
+
+// :/hello$  sudo chmod u=rw,g=rw,o=rw hello
+//  u  = User 
+//  g  = group
+//  o  = other users
+//  rw = read and write 
+
+// :/hello$  ls -lsah
+
+// :/hello$  su brian
+
+// $  touch brian.txt  
+
+// $  ls
+
+// $  vi hello.txt          => write 
+
+// $  ls
+
+// $  exit
+
+// $  cat hello.txt
+
+// $  ls -lsah
+
+// $  sudo chmod u=rw,g=rw,o=rw .
+
+// $  ls -lsah
+
+// :/$  sudo chmod u=rwx,g=rwx,o=rwx hello/
+
+// :/$  cd hello
+  
+// :/$  ls
+
+// :/$  ls -lsah
+
+// :/$  clear
+
+
+
+            //----- (10) - (Permission Shortcuts)
+
+
+//:~/hello$  touch file.txt
+
+// :~/hello$  sudo chmod 777 file.txt           //  This command will give read, write and execute permission to the owner, group and public.
+  
+// :~/hello$  sudo chmod u=rwx, g=rwx, o=rwx file.txt
+
+//  => chmod:  Linux changes the permissions of a file or directory <=
+
+// :~/hello$  sudo chmod 667 file.txt      //  Sets all three bits to '1    
+
+// :~/hello$  sudo chmod 700 file.txt
+
+// :~/hello$  ls -lsah
+
+// :~/hello$  sudo chmod 600 file.txt
+
+// :~/hello$  ls -lsah
+
+// :~/hello$  sudo chmod 640 file.txt
+
+// :~/hello$  ls -lsah
+
+// :~/hello$  touch my-new-program 
+
+
+// :~/hello$  sudo chmod +x my-new-program        //  Add execute permission for user 
+
+// :~/hello$  ls -lsah
+
+// :~/hello$  sudo chmod -x my-new-program        //  Remove execute permission for user 
+
+// :~/hello$  ls -lsah    
+
+// :~/hello$  sudo chmod +w my-new-program        //  Add write permission for user 
