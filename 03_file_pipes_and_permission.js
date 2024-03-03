@@ -563,7 +563,7 @@
 
 // :~$  ps aux | grep "ps aux "
 
-// :~$  yes > /dev/null &     // => [1] 1188
+// :~$  yes > /dev/null &     // => [1] 2896
 
 // :~$  ps aux | grep "yes"
 
@@ -599,7 +599,7 @@
 // :~/$  cat file.txt | echo hy
 // hi
  
-// :~/$  yes > /dev/null &    // => [1] 1257
+// :~/$  yes > /dev/null &    // => [2] 2946
 
 // :~/$  ps aux | grep yes 
 
@@ -612,7 +612,7 @@
 
 // :~$  whoami
 
-// :~$  whoami toshif
+// :~$  whoami s
 
 // :~$  whoami                // => s     
 
@@ -638,7 +638,7 @@
 
 // :~/home$  rm -rf / 
 
-// :~/home$  rm -rf akram             // => delete all files and dir in
+// :~/home$  rm -rf s             // => delete all files and dir in
 
 
 

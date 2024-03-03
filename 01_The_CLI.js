@@ -15,13 +15,13 @@
 
 // pwd
 
-// cd /home /toshif
+// cd /home /s
 
 // cd..
 
 // pwd
 
-// cd /home /toshif
+// cd /home /s
 
 // cd../..
 
@@ -33,13 +33,13 @@
 
 // cd home
 
-// cd toshif
+// cd s
 
 // cd..
 
-// cd../ toshif
+// cd../ s
 
-// cd../ toshif /../ toshif
+// cd../ s /../ s
 
 
             //----- (02) - (CLI Directories & Arguments)
@@ -287,7 +287,7 @@
 // ==> Copy and paste on the command line
 
 
-// ==> Ctrl+Shift+C and   Ctrl+Shift+V. <== 
+// ==> Ctrl+Shift+C and   Ctrl+Shift+V.
 
 
 
