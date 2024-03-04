@@ -80,3 +80,43 @@ Uploading testfile.txt to /var/www/html/testfile.txt
 testfile.txt    100%   50     0.0KB/s   00:00
 
 */
+
+
+
+                        //-----(04) - (Wget)
+
+
+/**send requests to the Internet and/or network.**/
+
+// :~$ wget https://raw.githubusercontent.com/btholt/bash2048/master/bash2048.sh
+
+// :~$ ls
+
+// :~$ chmod 700 bash2048.sh
+
+// :~$ ./bash2048.sh   
+
+
+                        //----- (05) - (curl Basics)
+ 
+
+// curl works more like a normal Linux program        
+
+// :~$ curl https://raw.githubusercontent.com/btholt/bash2048/master/bash2048.sh
+  
+// :~$ curl https://raw.githubusercontent.com/btholt/bash2048/master/bash2048.sh > game.sh
+
+// :~$  cat game.sh                            // display contents of
+// file in terminal
+
+// :~$ sh game.sh                             // run the script
+ 
+// :~$ cd ~
+
+// :~$ pwd
+// /home/student
+
+// :~$ python3 -m http.server 8000 --bind 0.0.0.0
+// Starting HTTP Server: Running on http://0.0.0.0:8000/, Ctrl+C to stop server.
+
+// :~$ exit                                               // close out of ssh session
